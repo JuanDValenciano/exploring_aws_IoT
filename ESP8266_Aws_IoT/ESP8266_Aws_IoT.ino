@@ -157,6 +157,8 @@ void setup() {
   uint8_t binaryCA[caPemCrt.length() * 3 / 4];
   len = b64decode(caPemCrt, binaryCA);
   wiFiClient.setCACert(binaryCA, len);
+
+  pubSubClient.setCallback(msgReceived);
 }
 
 unsigned long lastPublish;
