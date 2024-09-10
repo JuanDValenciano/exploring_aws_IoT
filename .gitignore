@@ -1,0 +1,14 @@
+*.swp
+*.swo
+*.elf
+*.hex
+*.o
+
+*.pem
+*.pem.crt
+*.pem.key
+*.csv
+
+.DS_Store
+
+.vscode
